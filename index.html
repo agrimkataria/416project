@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Car Prices Analysis</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Car Prices Analysis</h1>
+    <div class="narrative">
+      <p>Welcome to the narrative visualization exploring car prices and their performance-related factors. In this visualization, we will analyze data from a dataset containing various attributes of cars, including fuel efficiency, horsepower, and more. We'll focus on three key visualizations to uncover meaningful insights about the relationship between these factors.</p>
+      <p>Let's dive into each visualization to gain a deeper understanding of how fuel efficiency, horsepower, and other factors impact car prices and performance.</p>
+    </div>
+    <div class="graph-descriptions">
+      <div class="scene" id="scatterPlot">
+        <h2 class="chart-title">Scatter Plot: Fuel Efficiency vs. Horsepower</h2>
+        <div class="chart-description">
+          <p>This scatter plot showcases the relationship between fuel efficiency (mileage, represented by "citympg") and horsepower of cars. Each point represents a car, and its position on the plot is determined by its city mileage (x-axis) and horsepower (y-axis).</p>
+          <p>Insights: We can observe how fuel efficiency and horsepower are correlated. Cars with higher horsepower might have lower fuel efficiency, and vice versa.</p>
+        </div>
+      </div>
+
+      <div class="scene" id="barChart">
+        <h2 class="chart-title">Bar Chart: Average Horsepower by Car Body Type</h2>
+        <div class="chart-description">
+          <p>This bar chart presents the average horsepower of cars categorized by their body type (e.g., sedan, hatchback, etc.).</p>
+          <p>Insights: By analyzing the bar chart, we can identify which body type generally has higher or lower average horsepower, providing insights into the performance characteristics of different car designs.</p>
+        </div>
+      </div>
+
+      <div class="scene" id="bubbleChart">
+        <h2 class="chart-title">Bubble Chart: Engine Size vs. Price</h2>
+        <div class="chart-description">
+          <p>This bubble chart illustrates the relationship between car prices (represented by the size of bubbles), engine size (x-axis), and price (y-axis).</p>
+          <p>Insights: By examining the bubble chart, we can identify trends in car prices based on their engine size. The size of bubbles indicates the price range, providing insights into the relationship between engine size and car price.</p>
+        </div>
+      </div>
+    </div>
+    <button id="nextButton">Next Scene</button>
+  </div>
+  <script src="narrative.js"></script>
+</body>
+</html>
